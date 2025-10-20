@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarah Friedberg — Author</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding-bottom: 2rem;
+    }
+
+    header {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .author-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 8px;
+      object-fit: cover;
+      background-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .bio {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .bio h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+      color: #0f0f0f;
+    }
+
+    .bio p {
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    section.books {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .books h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      margin: 2.5rem 0 1.8rem;
+      text-align: center;
+      color: #111;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    .book {
+      text-align: center;
+      max-width: 170px;
+    }
+
+    .book-cover {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      border-radius: 6px;
+      margin-bottom: 0.9rem;
+      object-fit: cover;
+      background-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: #666;
+      padding: 0.4rem;
+    }
+
+    .book-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+      color: #0f0f0f;
+    }
+
+    .book-date {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 0.7rem;
+    }
+
+    .book-link {
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      background-color: #000;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      transition: opacity 0.2s;
+    }
+
+    .book-link:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+      }
+      .author-photo {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Image 0.jpg" alt="Sarah Friedberg" class="author-photo" onerror="this.style.display='flex'; this.innerHTML='Author Headshot'">
+    <div class="bio">
+      <h1>Sarah Friedberg</h1>
+      <p>
+        Sarah Friedberg is a student at the Portledge School in Locust Valley, NY. Her previous books include <em>Maybe at Dawn</em>, <em>When Light Touches Sky</em>, <em>Waiting for Dunno</em>, and <em>The Girl Who Wished Through A Mirror</em>. She studied creative writing at Dartmouth and acting at Stagedoor Manor in Loch Sheldrake, NY. <em>When We Were Briefly Strangers</em> is her first collection of plays.
+      </p>
+    </div>
+  </header>
+
+  <section class="books">
+    <h2>Published Works</h2>
+    <div class="book-grid">
+      <!-- When Light Touches Sky -->
+      <div class="book">
+        <img src="Image 1.jpg" alt="When Light Touches Sky book cover" class="book-cover" onerror="this.style.display='flex'; this.innerHTML='Cover: When Light Touches Sky'">
+        <div class="book-title">When Light Touches Sky</div>
+        <div class="book-date">February 2025</div>
+        <a href="https://www.amazon.com/When-Light-Touches-Sarah-Friedberg-ebook/dp/B0DXRVT65B/" class="book-link" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+
+      <!-- Maybe At Dawn -->
+      <div class="book">
+        <img src="Image 2.jpg" alt="Maybe At Dawn book cover" class="book-cover" onerror="this.style.display='flex'; this.innerHTML='Cover: Maybe At Dawn'">
+        <div class="book-title">Maybe At Dawn</div>
+        <div class="book-date">September 2025</div>
+        <a href="https://www.amazon.com/MAYBE-AT-DAWN-Sarah-Friedberg-ebook/dp/B0FQ7S2HJC/" class="book-link" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+
+      <!-- When We Were Briefly Strangers -->
+      <div class="book">
+        <img src="Image 3.jpg" alt="When We Were Briefly Strangers book cover" class="book-cover" onerror="this.style.display='flex'; this.innerHTML='Cover: When We Were Briefly Strangers'">
+        <div class="book-title">When We Were Briefly Strangers</div>
+        <div class="book-date">October 2025</div>
+        <a href="https://www.amazon.com/When-We-Were-Briefly-Strangers-ebook/dp/B0FVB93NN7/" class="book-link" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+
+      <!-- Waiting for Dunno -->
+      <div class="book">
+        <img src="Image 4.jpg" alt="Waiting for Dunno book cover" class="book-cover" onerror="this.style.display='flex'; this.innerHTML='Cover: Waiting for Dunno'">
+        <div class="book-title">Waiting for Dunno</div>
+        <div class="book-date">February 2024</div>
+        <a href="https://www.amazon.com/Waiting-Dunno-Sarah-Friedberg-ebook/dp/B0CVJLP9M7/" class="book-link" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+
+      <!-- The Girl Who Wished Through The Mirror -->
+      <div class="book">
+        <img src="Image 5.jpg" alt="The Girl Who Wished Through The Mirror book cover" class="book-cover" onerror="this.style.display='flex'; this.innerHTML='Cover: The Girl Who Wished Through The Mirror'">
+        <div class="book-title">The Girl Who Wished Through The Mirror</div>
+        <div class="book-date">June 2023</div>
+        <a href="https://www.amazon.com/Girl-Who-Wished-Through-Mirror-ebook/dp/B0C6N25T5K/" class="book-link" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sarah Friedberg. All rights reserved.
+  </footer>
+</body>
+</html>
